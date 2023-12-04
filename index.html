@@ -3,70 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Nosso time</title>
 
-  <style>
-    /* .element {
-      padding: 10px;
-      border: 1px solid #ccc;
-      cursor: pointer;
-    }
-
-    .destacado {
-      background-color: #f0f0f0
-    } */
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <label for="">Digite seu nome</label>
-  <input type="text" id="input">
+  <header>
+    <h1>Nosso time</h1>
+  </header>
 
-  <p id="feedback">Nenhum evento de teclado ainda.</p>
-  <!-- <div class="element">Passe o mouse</div> -->
-  <!-- <h1>Contador 
-    <span id="counter">0</span>
-  </h1>
-  <button id="btn-increment-counter">Incrementar</button> -->
+  <main>
+    <div class="user-list">
 
-  <script>
-    const inputElement = document.getElementById('input')
-    const feedback = document.getElementById('feedback')
+    </div>
+  </main>
 
-    inputElement.addEventListener('keydown', (event) => {
-      feedback.textContent = `Tecla pressionada: ${event.key}`
-    })
-
-    inputElement.addEventListener('keyup', () => {
-      feedback.textContent = 'Tecla liberada'
-    })
-    // const element = document.querySelector('.element')
-
-    // function passouMouse() {
-    //   element.classList.add('destacado')
-    // }
-
-    // function tirouMouse() {
-    //   element.classList.remove('destacado')
-    // }
-
-    // element.addEventListener('mouseover', passouMouse)
-    // element.addEventListener('mouseout', tirouMouse)
-    // let counter = 0
-
-    // let element = document.getElementById('counter')
-    // let button = document.getElementById('btn-increment-counter')
-
-    // // button.onclick = incrementCounter
-
-    // function incrementCounter(event) {
-    //   counter++
-    //   element.textContent = counter
-    //   console.log(event.clientX, event.clientY)
-
-    //   console.log(this.textContent = 'Hello')
-    // }
-
-    // button.addEventListener('click', incrementCounter)
-  </script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
