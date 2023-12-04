@@ -1,10 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Minha rede social</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* .element {
+      padding: 10px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .destacado {
+      background-color: #f0f0f0
+    } */
+  </style>
 </head>
 <body>
-    <script src="scripts.js"></script>
+  <label for="">Digite seu nome</label>
+  <input type="text" id="input">
+
+  <p id="feedback">Nenhum evento de teclado ainda.</p>
+  <!-- <div class="element">Passe o mouse</div> -->
+  <!-- <h1>Contador 
+    <span id="counter">0</span>
+  </h1>
+  <button id="btn-increment-counter">Incrementar</button> -->
+
+  <script>
+    const inputElement = document.getElementById('input')
+    const feedback = document.getElementById('feedback')
+
+    inputElement.addEventListener('keydown', (event) => {
+      feedback.textContent = `Tecla pressionada: ${event.key}`
+    })
+
+    inputElement.addEventListener('keyup', () => {
+      feedback.textContent = 'Tecla liberada'
+    })
+    // const element = document.querySelector('.element')
+
+    // function passouMouse() {
+    //   element.classList.add('destacado')
+    // }
+
+    // function tirouMouse() {
+    //   element.classList.remove('destacado')
+    // }
+
+    // element.addEventListener('mouseover', passouMouse)
+    // element.addEventListener('mouseout', tirouMouse)
+    // let counter = 0
+
+    // let element = document.getElementById('counter')
+    // let button = document.getElementById('btn-increment-counter')
+
+    // // button.onclick = incrementCounter
+
+    // function incrementCounter(event) {
+    //   counter++
+    //   element.textContent = counter
+    //   console.log(event.clientX, event.clientY)
+
+    //   console.log(this.textContent = 'Hello')
+    // }
+
+    // button.addEventListener('click', incrementCounter)
+  </script>
 </body>
 </html>
